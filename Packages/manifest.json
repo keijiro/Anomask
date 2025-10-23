@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "com.unity.recorder": "5.1.3",
+    "com.unity.render-pipelines.universal": "17.0.4",
+    "jp.keijiro.klak.hap": "0.1.20"
+  },
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "jp.keijiro"
+      ]
+    }
+  ]
+}
