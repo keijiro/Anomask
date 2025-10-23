@@ -27,9 +27,13 @@ void AnomaskComposite_float
    float2 UV,
    out float3 Output)
 {
+    Output = tex2D(SourceTex, UV).rgb;
+    /*
     Output.r = GlitchedSample(SourceTex, MaskTex, UV, 1).r;
     Output.g = GlitchedSample(SourceTex, MaskTex, UV, 4).g;
     Output.b = GlitchedSample(SourceTex, MaskTex, UV, 9).b;
+    */
+
     /*
     float2 uv2 = UV * float2(1.164, 0.8) + float2(-0.082, 0.1);
     int2 grid = floor(uv2 * float2(128, 88));
