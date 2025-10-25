@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pathMode: 0
-  _filePath: Mask.mov
+  _filePath: FaceMask.mov
   _time: 0
   _speed: 1
   _loop: 1

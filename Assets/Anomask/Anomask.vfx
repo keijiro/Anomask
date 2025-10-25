@@ -189,7 +189,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 30000
+      m_SerializableObject: 50000
     m_Space: -1
   m_Property:
     name: Rate
@@ -251,7 +251,7 @@ MonoBehaviour:
   - {fileID: 114350483966675015}
   - {fileID: 114350483966675092}
   - {fileID: 114350483966675242}
-  - {fileID: 114350483966675248}
+  - {fileID: 114350483966675265}
   m_UIPosition: {x: 255, y: 623}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
@@ -598,7 +598,7 @@ MonoBehaviour:
   - {fileID: 114350483966675018}
   - {fileID: 114350483966675026}
   dataType: 0
-  capacity: 65536
+  capacity: 131072
   stripCapacity: 1
   particlePerStripCount: 128
   needsComputeBounds: 0
@@ -2135,7 +2135,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
+      m_SerializableObject: 0.3
     m_Space: -1
   m_Property:
     name: Min Value
@@ -2169,7 +2169,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 2
+      m_SerializableObject: 1.5
     m_Space: -1
   m_Property:
     name: Max Value
@@ -3293,8 +3293,8 @@ MonoBehaviour:
   m_OutputSlots:
   - {fileID: 114350483966675165}
   m_OperatorName: Custom HLSL
-  m_HLSLCode: "float2 UVToUV2(float2 uv)\n{\n  return uv * float2(1.164, 0.8) + float2(-0.082,
-    0.1);\n}"
+  m_HLSLCode: "float2 UVToUV2(float2 uv)\n{\n  return uv * float2(1.164, 0.93) +
+    float2(-0.082, 0.035);\n}"
   m_ShaderFile: {fileID: 0}
   m_AvailableFunctions:
     selection: UVToUV2
@@ -3831,7 +3831,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":-0.009999999776482582,"y":-0.009999999776482582,"z":-0.009999999776482582}'
+      m_SerializableObject: '{"x":-0.03999999910593033,"y":-0.009999999776482582,"z":-0.009999999776482582}'
     m_Space: -1
   m_Property:
     name: Min
@@ -3967,7 +3967,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.009999999776482582,"y":0.009999999776482582,"z":0.009999999776482582}'
+      m_SerializableObject: '{"x":0.03999999910593033,"y":0.009999999776482582,"z":0.009999999776482582}'
     m_Space: -1
   m_Property:
     name: Max
@@ -4366,7 +4366,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.1
+      m_SerializableObject: 0.05
     m_Space: -1
   m_Property:
     name: Min Value
@@ -4400,7 +4400,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 0.5
     m_Space: -1
   m_Property:
     name: Max Value
@@ -4874,7 +4874,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675248
+--- !u!114 &114350483966675265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4893,17 +4893,17 @@ MonoBehaviour:
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
-  - {fileID: 114350483966675255}
-  - {fileID: 114350483966675260}
+  - {fileID: 114350483966675272}
+  - {fileID: 114350483966675277}
   m_OutputSlots: []
   m_Disabled: 0
-  m_ActivationSlot: {fileID: 114350483966675254}
+  m_ActivationSlot: {fileID: 114350483966675271}
   attribute: velocity
   Composition: 0
   Source: 0
-  Random: 2
+  Random: 1
   channels: 6
---- !u!114 &114350483966675254
+--- !u!114 &114350483966675271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4921,9 +4921,9 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675254}
+  m_MasterSlot: {fileID: 114350483966675271}
   m_MasterData:
-    m_Owner: {fileID: 114350483966675248}
+    m_Owner: {fileID: 114350483966675265}
     m_Value:
       m_Type:
         m_SerializableType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -4937,7 +4937,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675255
+--- !u!114 &114350483966675272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4952,18 +4952,18 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
   m_Children:
-  - {fileID: 114350483966675256}
+  - {fileID: 114350483966675273}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675255}
+  m_MasterSlot: {fileID: 114350483966675272}
   m_MasterData:
-    m_Owner: {fileID: 114350483966675248}
+    m_Owner: {fileID: 114350483966675265}
     m_Value:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":-1.0,"y":0.0,"z":0.0}}'
+      m_SerializableObject: '{"vector":{"x":-0.30000001192092898,"y":0.0,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: A
@@ -4972,7 +4972,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675256
+--- !u!114 &114350483966675273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4985,15 +4985,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675255}
+  m_Parent: {fileID: 114350483966675272}
   m_Children:
-  - {fileID: 114350483966675257}
-  - {fileID: 114350483966675258}
-  - {fileID: 114350483966675259}
+  - {fileID: 114350483966675274}
+  - {fileID: 114350483966675275}
+  - {fileID: 114350483966675276}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675255}
+  m_MasterSlot: {fileID: 114350483966675272}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5008,7 +5008,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675257
+--- !u!114 &114350483966675274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5021,12 +5021,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675256}
+  m_Parent: {fileID: 114350483966675273}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675255}
+  m_MasterSlot: {fileID: 114350483966675272}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5041,7 +5041,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675258
+--- !u!114 &114350483966675275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5054,12 +5054,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675256}
+  m_Parent: {fileID: 114350483966675273}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675255}
+  m_MasterSlot: {fileID: 114350483966675272}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5074,7 +5074,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675259
+--- !u!114 &114350483966675276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5087,12 +5087,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675256}
+  m_Parent: {fileID: 114350483966675273}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675255}
+  m_MasterSlot: {fileID: 114350483966675272}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5107,7 +5107,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675260
+--- !u!114 &114350483966675277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5122,18 +5122,18 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
   m_Children:
-  - {fileID: 114350483966675261}
+  - {fileID: 114350483966675278}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675260}
+  m_MasterSlot: {fileID: 114350483966675277}
   m_MasterData:
-    m_Owner: {fileID: 114350483966675248}
+    m_Owner: {fileID: 114350483966675265}
     m_Value:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":1.0,"y":0.0,"z":0.0}}'
+      m_SerializableObject: '{"vector":{"x":0.30000001192092898,"y":0.0,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: B
@@ -5142,7 +5142,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675261
+--- !u!114 &114350483966675278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5155,15 +5155,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675260}
+  m_Parent: {fileID: 114350483966675277}
   m_Children:
-  - {fileID: 114350483966675262}
-  - {fileID: 114350483966675263}
-  - {fileID: 114350483966675264}
+  - {fileID: 114350483966675279}
+  - {fileID: 114350483966675280}
+  - {fileID: 114350483966675281}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675260}
+  m_MasterSlot: {fileID: 114350483966675277}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5178,7 +5178,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675262
+--- !u!114 &114350483966675279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5191,12 +5191,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675261}
+  m_Parent: {fileID: 114350483966675278}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675260}
+  m_MasterSlot: {fileID: 114350483966675277}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5211,7 +5211,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675263
+--- !u!114 &114350483966675280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5224,12 +5224,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675261}
+  m_Parent: {fileID: 114350483966675278}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675260}
+  m_MasterSlot: {fileID: 114350483966675277}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
@@ -5244,7 +5244,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &114350483966675264
+--- !u!114 &114350483966675281
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5257,12 +5257,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966675261}
+  m_Parent: {fileID: 114350483966675278}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 114350483966675260}
+  m_MasterSlot: {fileID: 114350483966675277}
   m_MasterData:
     m_Owner: {fileID: 0}
     m_Value:
