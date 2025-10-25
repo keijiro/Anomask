@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pathMode: 0
-  _filePath: FaceMask.mov
+  _filePath: Mask.mov
   _time: 0
   _speed: 1
   _loop: 1
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 685084809}
   - component: {fileID: 685084808}
   m_Layer: 0
-  m_Name: Composite
+  m_Name: Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
