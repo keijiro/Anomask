@@ -581,7 +581,8 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: HAP_NO_DELAY
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
