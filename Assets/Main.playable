@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 16
+  take: 17
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -186,7 +186,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -8460750700717581854}
-    m_Duration: 175.68333333333334
+    m_Duration: 135
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4868553926834488729}
     m_EaseInDuration: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -2269399847402912405}
-    m_Duration: 175.68333333333334
+    m_Duration: 135
     m_TimeScale: 1
     m_ParentTrack: {fileID: -3783139254178953725}
     m_EaseInDuration: 0
@@ -430,7 +430,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 4845992684910804278}
-    m_Duration: 52.766666666666666
+    m_Duration: 135
     m_TimeScale: 1
     m_ParentTrack: {fileID: 5847554763670900998}
     m_EaseInDuration: 0

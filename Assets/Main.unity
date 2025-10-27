@@ -152,7 +152,7 @@ MonoBehaviour:
   _filePath: Mask.mov
   _time: 0
   _speed: 1
-  _loop: 1
+  _loop: 0
   _targetTexture: {fileID: 8400000, guid: 56544ad92e3dd4549ba5f1701c827fcc, type: 2}
   _targetRenderer: {fileID: 0}
   _targetMaterialProperty: _MaskTex
@@ -204,7 +204,7 @@ MonoBehaviour:
   _filePath: Source.mov
   _time: 0
   _speed: 1
-  _loop: 1
+  _loop: 0
   _targetTexture: {fileID: 8400000, guid: 50d8973fb8cb647a68b1006dd356bc8f, type: 2}
   _targetRenderer: {fileID: 0}
   _targetMaterialProperty: _SourceTex
@@ -388,7 +388,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 8d0c1d7ee3d1d4de5880e4a94c40f8d7, type: 2}
   m_InitialState: 1
-  m_WrapMode: 1
+  m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings: []
