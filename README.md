@@ -5,7 +5,7 @@
 1. Install the following custom nodes.
 
 - Kosinkadink/ComfyUI-VideoHelperSuite
-- keijiro/Comfyui-Yolov8-JSON.git
+- keijiro/Comfyui-Yolov8-JSON
 
 2. Download the YOLOv8-Face model
 
